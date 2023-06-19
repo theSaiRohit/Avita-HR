@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-container {
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+#__next {
+  font-family: var(--inter);
+}
+
+body {
+  background-color: var(--bg-col);
+  scroll-snap-type: y proximity;
+}
+
+html {
+  scroll-snap-type: y proximity;
+}
+
+section {
+  padding-top: var(--header-height);
+  &::before {
+    content: "";
+    height: 60%;
+    width: 80%;
+    background-color: var(--glow-color);
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    filter: blur(150px);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

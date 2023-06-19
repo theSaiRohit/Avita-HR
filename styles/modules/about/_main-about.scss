@@ -1,0 +1,55 @@
+.main-about {
+  --img-width: 450px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  margin: 6vh;
+  .main-about-text {
+    width: calc(90% - var(--img-width));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    h1 {
+      font-size: 5.5rem;
+      font-weight: 800;
+      width: fit-content;
+      word-spacing: 0.15em;
+      background-image: url("../../../public/assets/images/gradient.jpg");
+      background-position: center;
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  .img-container {
+    height: var(--img-width);
+    width: var(--img-width);
+    img {
+      border-radius: 30px;
+      object-fit: cover;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    .main-about-text {
+      width: 80%;
+    }
+    .img-container {
+      margin: 8vh 0;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .img-container {
+      width: 90%;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}

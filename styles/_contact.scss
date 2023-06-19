@@ -1,0 +1,10 @@
+@import "./modules/contact/main-contact";
+@import "./modules/contact/contact-heading";
+#contact {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}

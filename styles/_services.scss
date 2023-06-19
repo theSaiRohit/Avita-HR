@@ -1,0 +1,20 @@
+@import "./modules/services/services-sidebar";
+@import "./modules/services/services-desc";
+@import "./modules/services/services-contact";
+@import "./modules/services/services-heading";
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .services-scroll {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+  }
+  @media only screen and (max-width: 1200px) {
+    .services-scroll {
+      justify-content: space-around;
+    }
+  }
+}

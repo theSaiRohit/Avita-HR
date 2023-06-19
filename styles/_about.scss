@@ -1,0 +1,12 @@
+@import "./modules/about/about-info";
+@import "./modules/about/main-about";
+@import "./modules/about/mission";
+@import "./modules/about/founder";
+
+#about {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

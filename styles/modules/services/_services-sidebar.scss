@@ -1,0 +1,48 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  width: fit-content;
+  height: 100%;
+  position: sticky;
+  top: calc(var(--header-height) + 2em);
+  z-index: 1;
+  margin-bottom: 10vh;
+  h3 {
+    font-size: 1.75rem;
+    padding-left: 0.25em;
+    margin-bottom: 1.25vh;
+  }
+  button {
+    padding: 0.5em;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: start;
+    font-size: 1.25rem;
+    background-color: transparent;
+    border-left: 1px solid white;
+    &:hover {
+      text-shadow: 0px 0px 0.5em white;
+    }
+    &.serv-active {
+      color: var(--hover-color);
+      border-left: 1px solid var(--hover-color);
+      filter: drop-shadow(0 0 0.75rem var(--hover-color));
+      &:hover {
+        text-shadow: 0px 0px 0.01em white;
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    button {
+      font-size: 1rem;
+      padding-right: 0;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
