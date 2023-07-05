@@ -1,13 +1,21 @@
+@font-face {
+  font-family: "Posterama";
+  src: url("/assets/fonts/posterama.ttf") format("truetype");
+}
+
 :root {
   --bg-col: #0a0f20;
-  --hover-color: #f55980;
+  --hover-color: #ff4a00;
   --off-gray: rgba(160, 160, 160, 0.25);
   --glow-color: #36437b;
   --off-blue: #4f6cd7;
   --placeholder-color: rgb(150, 147, 229);
 
+  --font-color: white;
+
   --header-height: 8vh;
   --footer-height: 34vh;
 
   --inter: "Inter", sans-serif;
+  --posterama: "Posterama", sans-serif;
 }

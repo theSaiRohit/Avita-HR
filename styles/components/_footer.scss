@@ -7,7 +7,7 @@ footer {
   align-items: center;
   height: var(--footer-height);
   justify-content: center;
-  color: white;
+  color: var(--font-color);
   position: relative;
   z-index: 1;
   .footer-links {

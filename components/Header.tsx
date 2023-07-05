@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header id="main-header" className="dark-bg" ref={headerRef}>
       <Link href="/" className="img-container logo">
-        <Image src="/assets/images/bg.png" alt="logo" fill />
+        <Image src="/assets/images/logo.png" alt="logo" fill />
       </Link>
       <div className={`nav-container ${open ? "active" : "inactive"}`}>
         <nav>
@@ -39,20 +39,10 @@ export default function Header() {
           <Link href="/services" onClick={() => setOpen(!open)}>
             Services
           </Link>
-          <Link href="/" onClick={() => setOpen(!open)}>
-            Connections
-          </Link>
-          <Link href="/clients" onClick={() => setOpen(!open)}>
-            Clients
-          </Link>
           <Link href="/contact" onClick={() => setOpen(!open)}>
             Contact
           </Link>
         </nav>
-        <div className="login-container">
-          <Link href="/">Log in</Link>
-          <Link href="/">Sign up</Link>
-        </div>
       </div>
       <div className={`hamburger ${open ? "active" : "inactive"}`} onClick={toggleOpen}>
         <div className="line"></div>

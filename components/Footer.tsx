@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-links">
         <div className="visual-links">
           <Link href="/" className="img-container logo">
-            <Image src="/assets/images/bg.png" alt="logo" fill />
+            <Image src="/assets/images/logo.png" alt="logo" fill />
           </Link>
           <div className="icons-container">
             <Link href="/">

@@ -29,37 +29,33 @@ export default function Edge() {
   ];
 
   useEffect(() => {
-    let observerArray: IntersectionObserver[] = [];
     const cardElem = cardContainerRef.current;
     if (cardElem) {
-      const children = Array.from(cardContainerRef.current?.querySelectorAll(".edge-cards") ?? []);
-      const cardObserverCallback = (cards: any) => {
-        cards.forEach((card: any) => {
+      const children = Array.from(cardElem?.querySelectorAll(".edge-cards") ?? []);
+      const cardObserverCallback: IntersectionObserverCallback = (changedElems) => {
+        changedElems.forEach((card) => {
           if (card.isIntersecting) {
-            console.log("this is intersecting", card);
             const i = children.findIndex((node) => node.isEqualNode(card.target));
             setBackground(i);
           }
         });
       };
+
       const cardObserver: IntersectionObserver = new IntersectionObserver(cardObserverCallback, {
         root: null,
         rootMargin: "-120px",
         threshold: 0.8
       });
-      observerArray.push(cardObserver);
       children.forEach((card) => cardObserver.observe(card));
 
       return () => {
-        observerArray.forEach((elem) => {
-          elem.disconnect();
-        });
+        cardObserver.disconnect();
       };
     }
   }, [cardContainerRef]);
 
   return (
-    <div className="edge">
+    <div className="edge container">
       <div className="main-text">
         <h3>Our Edge</h3>
         <p className="edge-desc">
@@ -69,7 +65,7 @@ export default function Edge() {
       <div className="scroll">
         {data.map((item, index: number) => {
           return (
-            <span className={background == index ? "active" : "inactive"} key={index}>
+            <span className={background === index ? "active" : "inactive"} key={index}>
               {item.spanData}
             </span>
           );

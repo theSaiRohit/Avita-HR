@@ -1,7 +1,7 @@
 .vision {
   height: 35vh;
   background-color: var(--hover-color);
-  color: white;
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
     padding: 1em 2em;
     border-radius: 10px;
     display: block;
-    background-color: white;
+    background-color: var(--font-color);
     margin-top: 5vh;
     transition: all 0.3s ease;
     &:hover {
