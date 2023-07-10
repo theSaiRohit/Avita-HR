@@ -15,12 +15,8 @@
       font-weight: 800;
       width: fit-content;
       word-spacing: 0.15em;
-      background-image: url("../../../public/assets/images/gradient.jpg");
-      background-position: center;
-      background-size: cover;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+      color: var(--bg-pop);
+      text-transform: uppercase;
     }
     p {
       text-align: justify;

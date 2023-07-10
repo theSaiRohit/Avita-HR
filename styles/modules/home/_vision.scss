@@ -1,6 +1,6 @@
 .vision {
   height: 35vh;
-  color: var(--font-color);
+  color: var(--font-white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
   }
   a {
     text-decoration: none;
-    color: white;
+    color: var(--bg-pop);
     padding: 1em 2em;
     border-radius: 10px;
     display: block;

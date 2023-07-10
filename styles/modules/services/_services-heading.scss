@@ -5,16 +5,12 @@
   align-items: center;
   padding-bottom: 12.5vh;
   h1 {
-    background-image: url(/assets/images/gradient.jpg);
-    background-position: center;
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--bg-pop);
     margin-right: 0.4em;
     font-size: 5.5rem;
     font-weight: 800;
     margin: 5vh 0;
+    text-transform: uppercase;
   }
   p {
     color: var(--font-color);

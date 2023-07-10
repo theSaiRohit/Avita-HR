@@ -10,20 +10,18 @@
     align-items: center;
     height: fit-content;
     h1 {
-      color: var(--font-color);
+      color: var(--hover-color);
       font-size: 5.5rem;
       font-weight: 800;
       width: fit-content;
       word-spacing: 0.15em;
+      text-transform: uppercase;
+
       span {
         font-family: var(--posterama);
-        background-image: url(/assets/images/gradient.jpg);
         font-weight: 800;
         background-position: center;
-        background-size: cover;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+        color: #041a8c;
         margin-right: 0.4em;
         text-transform: uppercase;
       }

@@ -34,7 +34,6 @@ export default function Footer() {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/services">Services</Link>
-            <Link href="/client">Client</Link>
             <Link href="/contact">Contact</Link>
           </div>
           <div className="col col-two">

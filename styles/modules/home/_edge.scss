@@ -41,6 +41,7 @@
       width: calc(100% / 5);
       text-align: center;
       &.active {
+        color: white;
         background: linear-gradient(45deg, #ff3a24, #0128c4);
       }
     }

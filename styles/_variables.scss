@@ -4,15 +4,16 @@
 }
 
 :root {
-  --bg-col: #0a0f20;
+  --bg-col: #f5f5f5;
   --hover-color: #ff4800;
   --off-gray: rgba(160, 160, 160, 0.25);
-  --glow-color: #36437b;
+  --glow-color: #c1e1ffb6;
   --off-blue: #4f6cd7;
-  --placeholder-color: rgb(150, 147, 229);
-  --bg-pop: rgb(0, 183, 255, 0.8);
+  --placeholder-color: #041b8c;
+  --bg-pop: #041a8c;
 
-  --font-color: white;
+  --font-color: rgb(0, 0, 0);
+  --font-white: white;
 
   --header-height: 8vh;
   --footer-height: 34vh;

@@ -6,8 +6,8 @@
   padding: 8vh 15%;
   margin-bottom: 10vh;
   overflow: hidden;
-  background: radial-gradient(ellipse at top, var(--bg-pop), transparent),
-    radial-gradient(ellipse at bottom, transparent, transparent);
+  background: var(--bg-pop);
+  color: white;
   z-index: 1;
   .profile {
     width: calc(90% - (var(--founder-desc-length)));

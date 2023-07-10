@@ -13,14 +13,14 @@
     background-color: rgba(71, 85, 181, 0.4);
     .nav-container {
       a {
-        text-shadow: 0 0 4px rgb(0, 0, 0), 0 0 6px rgb(0, 0, 0);
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
       }
     }
   }
   .logo {
     height: 70%;
     aspect-ratio: 1;
-    filter: drop-shadow(0 0 15px rgb(241, 77, 68));
+    // filter: drop-shadow(0 0 15px rgb(241, 77, 68));
     img {
       object-fit: contain;
     }
