@@ -6,7 +6,7 @@
   padding: 8vh 15%;
   margin-bottom: 10vh;
   overflow: hidden;
-  background: radial-gradient(ellipse at top, #5272d0, transparent),
+  background: radial-gradient(ellipse at top, var(--bg-pop), transparent),
     radial-gradient(ellipse at bottom, transparent, transparent);
   z-index: 1;
   .profile {

@@ -1,6 +1,6 @@
 .services-contact {
   width: 100%;
-  background-color: var(--hover-color);
+  background-color: var(--bg-pop);
   padding: 6vh 15%;
   color: var(--font-color);
   display: flex;
@@ -13,16 +13,21 @@
   }
   .contact-btn {
     text-decoration: none;
-    color: var(--hover-color);
+    color: white;
     padding: 1em 2em;
     border-radius: 10px;
-    width: fit-content;
     display: block;
-    background-color: var(--font-color);
-    margin-top: 2.5vh;
+    font-weight: 600;
+    background-color: var(--hover-color);
+    margin-top: 5vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--hover-color);
     transition: all 0.3s ease;
     &:hover {
-      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25);
+      color: white;
+      border: 2px solid white;
+      box-shadow: 0 0 0 black;
+      background-color: rgba(0, 0, 0, 0);
     }
   }
 }

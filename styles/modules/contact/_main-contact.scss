@@ -63,7 +63,8 @@
     align-items: center;
     h2 {
       color: var(--hover-color);
-      font-weight: 400;
+      font-weight: 600;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     }
     label {
       display: flex;

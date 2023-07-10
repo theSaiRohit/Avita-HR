@@ -10,20 +10,17 @@
   transition: all 0.3s ease;
   &.dark-bg {
     backdrop-filter: blur(10px);
-    background-color: rgba(50, 53, 70, 0.4);
+    background-color: rgba(71, 85, 181, 0.4);
     .nav-container {
-      .login-container {
-        a {
-          &:nth-child(2) {
-            background-color: var(--hover-color);
-          }
-        }
+      a {
+        text-shadow: 0 0 4px rgb(0, 0, 0), 0 0 6px rgb(0, 0, 0);
       }
     }
   }
   .logo {
     height: 70%;
     aspect-ratio: 1;
+    filter: drop-shadow(0 0 15px rgb(241, 77, 68));
     img {
       object-fit: contain;
     }
@@ -39,6 +36,7 @@
       transition: all 0.1s ease;
       text-decoration: none;
       font-weight: 600;
+      letter-spacing: 1px;
       &:hover {
         color: var(--hover-color);
       }
@@ -54,17 +52,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      a {
-        &:nth-child(2) {
-          padding: 0.75em 1.25em;
-          background-color: rgba(126, 126, 126, 0.4);
-          border-radius: 10px;
-          &:hover {
-            color: var(--font-color);
-            background-color: var(--hover-color);
-          }
-        }
-      }
     }
   }
   @media only screen and (max-width: 1100px) {
