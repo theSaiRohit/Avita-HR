@@ -5,7 +5,7 @@ export default function Founder() {
     <div className="founder">
       <div className="profile">
         <div className="img-container">
-          <Image src="/assets/images/default profile pic.webp" alt="hero-img" fill sizes="100%" />
+          <Image src="/assets/images/founder.jpg" alt="founder" fill sizes="100%" />
         </div>
         <span className="founder-name">Mr. Mohan Venkatraman</span>
       </div>
@@ -14,8 +14,8 @@ export default function Founder() {
         <p className="desc">
           The founder director, Mr. Mohan Venkatraman is a seasoned HR professional backed with 30+ years of experience.
           He holds a Degree in Commerce and PG Degree in Human Resource Management. He has worked for Companies viz.
-          Britannia Industries, Integrated Financec Company Ltd., Professional Consultancy services in India and
-          overseas Companies such as OTE Group, Suhail Bahwan Automotive Group and General Electric & Trading Company in
+          Britannia Industries, Integrated Finance Company Ltd., Professional Consultancy services in India and overseas
+          Companies such as OTE Group, Suhail Bahwan Automotive Group and General Electric & Trading Company in
           Sultanate of Oman.
           <br />
           <br />

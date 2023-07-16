@@ -17,7 +17,7 @@ export default function MainAbout() {
         </p>
       </div>
       <div className="img-container">
-        <Image src="/assets/images/hero-img.jpg" alt="hero-img" fill sizes="100%" />
+        <Image src="/assets/images/about-us.png" alt="hero-img" fill sizes="100%" />
       </div>
     </div>
   );

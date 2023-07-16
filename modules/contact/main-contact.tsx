@@ -14,19 +14,22 @@ export default function MainContact() {
           <Link href="mailto: avitahrs@gmail.com" className="mail-info">
             avitahrs@gmail.com
           </Link>
+          <Link href="mailto: mohan@avitahr.com" className="mail-info">
+            mohan@avitahr.com
+          </Link>
         </div>
         <div className="phone">
           <h3 className="phone-heading">
             <FaAddressBook />
             Phone Number
           </h3>
-          <Link href="tel:+919892901005" className="phone-info">
+          <Link href="tel:+919363531462" className="phone-info">
             <FaPhoneAlt />
-            +919892901005
+            +919363531462
           </Link>
-          <Link href="tel:+919892901005" className="phone-info">
+          <Link href="tel:+919444794753" className="phone-info">
             <FaPhoneAlt />
-            +919892901005
+            +919444794753
           </Link>
         </div>
         <div className="address">
@@ -35,7 +38,7 @@ export default function MainContact() {
             Address
           </h3>
           <p className="addr-info">
-            Flat No.T2, SHIVALAY, Plot No.36, Kambar Street Annai Indiranagar, Velachery Chennai 600042
+            Flat No.T2, SHIVALAY, Plot No.36, Kambar Street Annai Indiranagar, Velachery Chennai 600042, India
           </p>
         </div>
       </div>

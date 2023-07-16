@@ -5,6 +5,9 @@ export default function HeroText() {
   return (
     <div className="hero-text">
       <div className="text">
+        <div className="img-container landing-logo">
+          <Image src="/assets/images/logo.png" alt="hero-img" fill sizes="100%" />
+        </div>
         <h1>
           <span>AVITA</span>
           HR Solutions
@@ -17,8 +20,8 @@ export default function HeroText() {
           <p>Empowering Organizations through HR Excellence & Maximizing Performance through HR Strategies</p>
         </div>
       </div>
-      <div className="img-container">
-        <Image src="/assets/images/hero-img.jpg" alt="hero-img" sizes="100%" fill />
+      <div className="img-container hero-img-container">
+        <Image src="/assets/images/hero.png" alt="hero-img" sizes="100%" fill />
       </div>
     </div>
   );

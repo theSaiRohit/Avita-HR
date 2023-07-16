@@ -36,9 +36,13 @@
         text-decoration: none;
         transition: all 0.3s ease;
         &:hover {
-          color: var(--glow-color);
+          color: var(--hover-color);
         }
       }
+    }
+    .email {
+      display: flex;
+      flex-direction: column;
     }
     .phone {
       display: flex;

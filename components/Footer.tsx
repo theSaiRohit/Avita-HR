@@ -41,13 +41,16 @@ export default function Footer() {
             <Link href="mailto: avitahrs@gmail.com" className="mail-info">
               avitahrs@gmail.com
             </Link>
-            <Link href="tel:+919892901005" className="phone-info">
-              <FaPhoneAlt />
-              +919892901005
+            <Link href="mailto: mohan@avitahr.com" className="mail-info">
+              mohan@avitahr.com
             </Link>
-            <Link href="tel:+919892901005" className="phone-info">
+            <Link href="tel:+919363531462" className="phone-info">
               <FaPhoneAlt />
-              +919892901005
+              +91 9363531462
+            </Link>
+            <Link href="tel:+919444794753" className="phone-info">
+              <FaPhoneAlt />
+              +91 9444794753
             </Link>
           </div>
         </div>
