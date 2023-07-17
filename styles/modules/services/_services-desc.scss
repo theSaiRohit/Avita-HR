@@ -21,9 +21,9 @@
     .container-wrapper {
       height: fit-content;
       margin: 2.5vh 0;
-      background-color: #131b38;
+      background-color: var(--bg-pop);
       border-radius: 20px;
-      padding: 12.5px;
+      padding: 7.5px;
       border: 1px solid rgba(255, 255, 255, 0.25);
       .img-container {
         border: 1px solid black;
