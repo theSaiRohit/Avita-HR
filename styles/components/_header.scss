@@ -20,7 +20,6 @@
   .logo {
     height: 70%;
     aspect-ratio: 1;
-    // filter: drop-shadow(0 0 15px rgb(241, 77, 68));
     img {
       object-fit: contain;
     }
@@ -116,7 +115,7 @@
       &.active {
         z-index: 3;
         transform: translateY(0);
-        background-color: var(--glow-color);
+        background-color: var(--hover-color);
         touch-action: none;
       }
       &.inactive {
