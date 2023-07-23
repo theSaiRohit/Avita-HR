@@ -1,7 +1,26 @@
+import useForm from "@/hooks/use-form";
 import Link from "next/link";
+import { useRef } from "react";
+import type { FormEventHandler } from "react";
 import { FaAddressBook, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 export default function MainContact() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const googleSubmit = useForm({
+    formRef: formRef,
+    gFormId: "1143o-OZk0eQ7j-LPBlDyVwB1MH32ghvegvMHtZ2z8y8",
+    links: [
+      { entryId: "92291631", formId: "name" },
+      { entryId: "1551975673", formId: "mail" },
+      { entryId: "117089725", formId: "number" },
+      { entryId: "2065895167", formId: "message" }
+    ]
+  });
+
+  const submitHandler: FormEventHandler = (event) => {
+    event.preventDefault();
+    googleSubmit();
+  };
   return (
     <div className="contact-container">
       <div className="info-container">
@@ -42,25 +61,25 @@ export default function MainContact() {
           </p>
         </div>
       </div>
-      <form className="form-container">
+      <form className="form-container" ref={formRef} onSubmit={submitHandler}>
         <h2 className="send-msg">Send Us a message</h2>
         <label className="form-name">
           Name :
-          <input type="text" name="name" placeholder="Your name" />
+          <input type="text" name="name" placeholder="Your name" id="name" />
         </label>
         <label className="form-number">
           Phone Number :
-          <input type="number" name="number" placeholder="Your number" />
+          <input type="number" name="number" placeholder="Your number" id="number" />
         </label>
         <label className="form-mail">
           Mail :
-          <input type="text" name="mail" placeholder="Your email address" />
+          <input type="email" name="mail" placeholder="Your email address" id="mail" />
         </label>
         <label className="your-msg">
           Your message :
-          <textarea className="text-box" placeholder="Enter your message" />
+          <textarea className="text-box" placeholder="Enter your message" name="message" id="message" />
         </label>
-        <button type="button">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
