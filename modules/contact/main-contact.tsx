@@ -8,18 +8,20 @@ export default function MainContact() {
   const formRef = useRef<HTMLFormElement>(null);
   const googleSubmit = useForm({
     formRef: formRef,
-    gFormId: "1143o-OZk0eQ7j-LPBlDyVwB1MH32ghvegvMHtZ2z8y8",
+    gFormId: "1F6xH1HoQPnPGEUnu5dei8GygZt1Ki0goScPCq-1LvCE",
     links: [
-      { entryId: "92291631", formId: "name" },
-      { entryId: "1551975673", formId: "mail" },
-      { entryId: "117089725", formId: "number" },
-      { entryId: "2065895167", formId: "message" }
+      { entryId: "120623533", formId: "name" },
+      { entryId: "1854398133", formId: "mail" },
+      { entryId: "826490151", formId: "number" },
+      { entryId: "309336925", formId: "message" }
     ]
   });
 
   const submitHandler: FormEventHandler = (event) => {
     event.preventDefault();
     googleSubmit();
+    alert("The Form has been successfully submitted!");
+    formRef.current?.reset();
   };
   return (
     <div className="contact-container">
