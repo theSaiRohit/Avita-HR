@@ -10,7 +10,7 @@ export default function HeroText() {
         </div>
         <h1>
           <span>AVITA</span>
-          HR Solutions
+          HER0 Solutions
         </h1>
         <h2>
           <span>HR Consultancy</span>/<span>Recruitment</span> / <span>Training</span>
