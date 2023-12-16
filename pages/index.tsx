@@ -4,8 +4,6 @@ import Vision from "@/modules/home/vision";
 import Head from "next/head";
 
 export default function Home() {
-  // mike check
-  // mike check
   return (
     <>
       <Head>
